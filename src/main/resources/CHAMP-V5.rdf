@@ -1,0 +1,1490 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://sdp.collaborationlayer-traton.com/champ"
+     xml:base="http://sdp.collaborationlayer-traton.com/champ"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:champ="http://sdp.collaborationlayer-traton.com/champ#">
+    <owl:Ontology rdf:about="http://sdp.collaborationlayer-traton.com/champ"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#formerlyKnownAs -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#formerlyKnownAs">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasAuthor -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasAuthor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasBrand">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabeling"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasCrossReferenceChangeLog -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasCrossReferenceChangeLog">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasOwnerBrand -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasOwnerBrand">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasPart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasPartLabeling -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasPartLabeling">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabeling"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasSourceBrand -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasSourceBrand">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#hasTargetBrand -->
+
+    <owl:ObjectProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#hasTargetBrand">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Additional_Document -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Additional_Document">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#additional_document"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#pertaining_document"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Additional Document</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Anderungsnummer_zum_Anderungsindex -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Anderungsnummer_zum_Anderungsindex">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Last_CO"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Last_ECO"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Änderungsnummer zum Änderungsindex</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#AuthorDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#AuthorDataProperty"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Beistellteil -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Beistellteil">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Provided_customer_part"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#direct_customer_part"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Beistellteil</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Bezugsart -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Bezugsart">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Sourcing_area"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Sourcing_code"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Bezugsart</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#BrandDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#BrandDataProperty"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#BrandId -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#BrandId">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#BrandDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#BrandName -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#BrandName">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#BrandDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#BrandNatoCageCode -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#BrandNatoCageCode">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#BrandDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Class_of_Req -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Class_of_Req">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TK"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#classification_of_requirement_for_homologation"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Class of Rq.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLogDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLogDataProperty"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReferenceReason-ID -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceReason-ID">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceRelationDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReferenceReasonDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceReasonDescription">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceRelationDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReferenceRelationDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceRelationDataProperty"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReferenceStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceStatus">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceRelationDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Defining_Document -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Defining_Document">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#defining_document"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#defining_document_mantb"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Defining Document</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Description">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#description"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#item_name"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Description</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Design_Owning_Brand -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Design_Owning_Brand">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand_mantb"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Design Owning  Brand (CF)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand_mantb"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Design owning brand</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand_mantb -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Design_owning_brand_mantb">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Design owning brand</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Last_CO -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Last_CO">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Last_ECO"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Last CO</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Last_ECO -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Last_ECO">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Last ECO</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Lieferantenfreigabe -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Lieferantenfreigabe">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Special_Regulation_Traton"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#special_regulation"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Lieferantenfreigabe</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#NATO_cage_code -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#NATO_cage_code">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#suplier_name_Traton"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#supplier_name"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>NATO cage code</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#NavistaPartLabelingDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#NavistaPartLabelingDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabelingDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Object_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Object_ID">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#object_ID"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#part_number"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Object ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#PartDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#PartDataProperty"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#PartDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#PartDescription">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#PartId -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#PartId">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#PartLabelingDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#PartLabelingDataProperty"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#PartType -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#PartType">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Partner_name -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Partner_name">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#partner"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#referenced_partner"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Partner name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Provided_customer_part -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Provided_customer_part">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#direct_customer_part"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Provided customer part</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Replaced_by_for_Spare_Part -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Replaced_by_for_Spare_Part">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ersetz_durch"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#replaced_by_for_spare_part"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Replaced by for Spare Part</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabelingDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Sourcing_area -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Sourcing_area">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Sourcing_code"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Sourcing area/purchaser code/procurement code</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Sourcing_code -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Sourcing_code">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Source code (CF)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Special_Regulation_Traton -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Special_Regulation_Traton">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#special_regulation"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Special Regulation [1..n]</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TK -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#TK">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#classification_of_requirement_for_homologation"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>TK</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabelingDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Unit_of_Measure_for_Stock -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Unit_of_Measure_for_Stock">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Unit_size"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_stock"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:comment>Unit of Measure for Stock</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Unit_of_measure_for_EBOM -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Unit_of_measure_for_EBOM">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_BOM"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Unit of measure for EBOM</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Unit_size -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Unit_size">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_stock"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Unit size, price/sales unit</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Weight_Code_Stock -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Weight_Code_Stock">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#gewichtsherkunft"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#weight_code_Stock"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Weight Code (Stock) (CF)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Weight_Stock -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#Weight_Stock">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#weight"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#weight_Stock"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Weight (Stock) (CF)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#additional_document -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#additional_document">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#pertaining_document"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>additional document</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#brand -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#brand">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#AuthorDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#classification_of_requirement_for_homologation -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#classification_of_requirement_for_homologation">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>classification of requirement for homologation (CF)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#defining_document -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#defining_document">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#defining_document_mantb"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>defining document</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#defining_document_mantb -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#defining_document_mantb">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>defining document mantb</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#description -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#description">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#item_name"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>description</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#direct_customer_part -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#direct_customer_part">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>direct customer part</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#ersetz_durch -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#ersetz_durch">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#replaced_by_for_spare_part"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>ersetz durch (spare part)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#gewichtsherkunft -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#gewichtsherkunft">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#weight_code_Stock"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>gewichtsherkunft</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#item_name -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#item_name">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>item name long</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#note -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#note">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLogDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#object_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#object_ID">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#part_number"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>object ID</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#part_number -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#part_number">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>part number</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#partner -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#partner">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#referenced_partner"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>partner</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#pertaining_document -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#pertaining_document">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>pertaining document</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#reason -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#reason">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLogDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#referenced_partner -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#referenced_partner">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>referenced partner</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#replaced_by_for_spare_part -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#replaced_by_for_spare_part">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>replaced by for spare part (CF)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#special_regulation -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#special_regulation">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>special regulation</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_Traton"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_mantb"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>special regulation comment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_Traton -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_Traton">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_mantb"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>special regulation comment?</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_mantb -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#special_regulation_comment_mantb">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>special regulation comment</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#status -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#status">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLogDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#suplier_name_Traton -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#suplier_name_Traton">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#supplier_name"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>suplier name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#supplier_name -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#supplier_name">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>supplier name</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#supplier_part_number -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#supplier_part_number">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#supplier_part_number_mantb"/>
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#supplier_pat_number_Traton"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>supplier part number</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#supplier_part_number_mantb -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#supplier_part_number_mantb">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#supplier_pat_number_Traton"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>supplier part number</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#supplier_pat_number_Traton -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#supplier_pat_number_Traton">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TratonPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>supplier pat number</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#systemName -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#systemName">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#AuthorDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLogDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#unit_of_measure -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_BOM"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>unit of measure</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_BOM -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_BOM">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>unit of measure for BOM</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_stock -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#unit_of_measure_for_stock">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>unit of measure for stock</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#userId -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#userId">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#AuthorDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#userName -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#userName">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#AuthorDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#weight">
+        <owl:equivalentProperty rdf:resource="http://sdp.collaborationlayer-traton.com/champ#weight_Stock"/>
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>weight (unit Kg)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#weight_Stock -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#weight_Stock">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>weight (Stock)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#weight_code_Stock -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#weight_code_Stock">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#ScaniaPartLabelingDataProperty"/>
+        <rdfs:domain rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>weight code (Stock)</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="http://sdp.collaborationlayer-traton.com/champ#MANT&amp;BPartLabelingDataProperty">
+        <rdfs:subPropertyOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabelingDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Author -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#Author">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Brand -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#Brand">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReference -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReference">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#MANTB -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#MANTB">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#MANTBPart -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#MANTBPart">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#NAVISTAPartLabeling -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#NAVISTAPartLabeling">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#NAVISTAR -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#NAVISTAR">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#NAVISTARPart -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#NAVISTARPart">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Object -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Part -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#Part">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#PartLabeling -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#PartLabeling">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#SCANIA -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#SCANIA">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#SCANIAPart -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#SCANIAPart">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabeling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TRATON -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#TRATON">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Brand"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TRATONPart -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#TRATONPart">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part"/>
+    </owl:Class>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling -->
+
+    <owl:Class rdf:about="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling">
+        <rdfs:subClassOf rdf:resource="http://sdp.collaborationlayer-traton.com/champ#PartLabeling"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-MANTB-1888075-81.27120-0059-N1 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-MANTB-1888075-81.27120-0059-N1">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <champ:hasAuthor rdf:resource="http://sdp.collaborationlayer-traton.com/champ#author-MANT&amp;B-h8206"/>
+        <champ:note>Cross reference is created</champ:note>
+        <champ:reason>REASON</champ:reason>
+        <champ:status>PROPOSED</champ:status>
+        <champ:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-10-01T12:47:50Z</champ:timestamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-MANTB-1888075-81.27120-0059-N2 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-MANTB-1888075-81.27120-0059-N2">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <champ:hasAuthor rdf:resource="http://sdp.collaborationlayer-traton.com/champ#author-SCANIA-sneskal"/>
+        <champ:note>Cross reference relation is approved by Design ownner brand</champ:note>
+        <champ:reason>REASON</champ:reason>
+        <champ:status>VALIDATED</champ:status>
+        <champ:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-11-01T12:47:50Z</champ:timestamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N1 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N1">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <champ:hasAuthor rdf:resource="http://sdp.collaborationlayer-traton.com/champ#author-NAVISTAR-yyy1v19"/>
+        <champ:note>Cross reference is created</champ:note>
+        <champ:reason>REASON</champ:reason>
+        <champ:status>PROPOSED</champ:status>
+        <champ:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-08-01T12:47:50Z</champ:timestamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N2 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N2">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <champ:hasAuthor rdf:resource="http://sdp.collaborationlayer-traton.com/champ#author-SCANIA-sneskal"/>
+        <champ:note>Cross reference relation is approved by Design ownner brand</champ:note>
+        <champ:reason>REASON</champ:reason>
+        <champ:status>VALIDATED</champ:status>
+        <champ:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-09-01T12:47:50Z</champ:timestamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N3 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N3">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <champ:hasAuthor rdf:resource="http://sdp.collaborationlayer-traton.com/champ#author-NAVISTAR-yyy1v19"/>
+        <champ:note>Nav-2055933 is replaced by other Part NAv-xxxxx</champ:note>
+        <champ:reason>REASON</champ:reason>
+        <champ:status>PORPOSED_EXPIRED</champ:status>
+        <champ:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-10-01T12:47:50Z</champ:timestamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N4 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N4">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReferenceChangeLog"/>
+        <champ:hasAuthor rdf:resource="http://sdp.collaborationlayer-traton.com/champ#author-SCANIA-sneskal"/>
+        <champ:note>Expiration of the part relation is approved by Scania</champ:note>
+        <champ:reason>REASON</champ:reason>
+        <champ:status>EXPIRED</champ:status>
+        <champ:timestamp rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2018-11-01T12:47:50Z</champ:timestamp>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRR-SCANIA-MANTB-1888075-08.71000-1205 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRR-SCANIA-MANTB-1888075-08.71000-1205">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <champ:hasCrossReferenceChangeLog rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-MANTB-1888075-81.27120-0059-N1"/>
+        <champ:hasCrossReferenceChangeLog rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-MANTB-1888075-81.27120-0059-N2"/>
+        <champ:hasPart rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-08.71000-1205"/>
+        <champ:hasPart rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1888075"/>
+        <champ:hasSourceBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIA"/>
+        <champ:hasTargetBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTB"/>
+        <champ:CrossReferenceReason-ID>REASON ID</champ:CrossReferenceReason-ID>
+        <champ:CrossReferenceReasonDescription>Cross reference relation is approved by Design ownner brand</champ:CrossReferenceReasonDescription>
+        <champ:CrossReferenceStatus>VALIDATED</champ:CrossReferenceStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#CRR-SCANIA-NAVISTAR-1888075-1230003N1 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#CRR-SCANIA-NAVISTAR-1888075-1230003N1">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CrossReference"/>
+        <champ:hasCrossReferenceChangeLog rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N1"/>
+        <champ:hasCrossReferenceChangeLog rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N2"/>
+        <champ:hasCrossReferenceChangeLog rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N3"/>
+        <champ:hasCrossReferenceChangeLog rdf:resource="http://sdp.collaborationlayer-traton.com/champ#CRC-SCANIA-NAVISTA-1888075-1230003N1-N4"/>
+        <champ:hasPart rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1230003N1"/>
+        <champ:hasPart rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1888075"/>
+        <champ:hasSourceBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIA"/>
+        <champ:hasTargetBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#NAVISTAR"/>
+        <champ:CrossReferenceReason-ID>REASON ID</champ:CrossReferenceReason-ID>
+        <champ:CrossReferenceReasonDescription>REASON</champ:CrossReferenceReasonDescription>
+        <champ:CrossReferenceStatus>EXPIRED</champ:CrossReferenceStatus>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#MANTB -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#MANTB">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTB"/>
+        <champ:BrandId>MANTB</champ:BrandId>
+        <champ:BrandName>MAN Track and Bus</champ:BrandName>
+        <champ:BrandNatoCageCode>m6788478</champ:BrandNatoCageCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPartLabeling"/>
+        <champ:hasBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTB"/>
+        <champ:description>0</champ:description>
+        <champ:part_number>0</champ:part_number>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#NAVISTAR -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#NAVISTAR">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#NAVISTAR"/>
+        <champ:BrandId>NAVISTAR</champ:BrandId>
+        <champ:BrandId>n887858</champ:BrandId>
+        <champ:BrandName>Navistar Inc.</champ:BrandName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-08.71000-1205 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-08.71000-1205">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTBPart"/>
+        <champ:hasBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTB"/>
+        <champ:hasOwnerBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#MANTB"/>
+        <champ:PartDescription>SPEED SENSOR</champ:PartDescription>
+        <champ:PartId>81.27120-0059</champ:PartId>
+        <champ:PartType>Part</champ:PartType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1230003N1 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1230003N1">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#NAVISTARPart"/>
+        <champ:hasBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#NAVISTAR"/>
+        <champ:hasOwnerBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#NAVISTAR"/>
+        <champ:PartDescription>SENSOR NAVISTAR</champ:PartDescription>
+        <champ:PartId>1230003N1</champ:PartId>
+        <champ:PartType>Part</champ:PartType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1888075 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#Part-TRATON-1888075">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPart"/>
+        <champ:hasBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIA"/>
+        <champ:hasOwnerBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIA"/>
+        <champ:PartDescription>ROTATIONAL SPEED SENSOR</champ:PartDescription>
+        <champ:PartId>1888075</champ:PartId>
+        <champ:PartType>Part</champ:PartType>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#SCANIA -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#SCANIA">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIA"/>
+        <champ:BrandId>SCANIA</champ:BrandId>
+        <champ:BrandName>Scania CV AB</champ:BrandName>
+        <champ:BrandNatoCageCode>ux12366</champ:BrandNatoCageCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIAPartLabeling"/>
+        <champ:hasBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#SCANIA"/>
+        <champ:item_name>0</champ:item_name>
+        <champ:object_ID>0</champ:object_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TRATON -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#TRATON">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATON"/>
+        <champ:BrandId>TRATON</champ:BrandId>
+        <champ:BrandName>Traton</champ:BrandName>
+        <champ:BrandNatoCageCode>tratonnatocagecode</champ:BrandNatoCageCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATONPartLabeling"/>
+        <champ:hasBrand rdf:resource="http://sdp.collaborationlayer-traton.com/champ#TRATON"/>
+        <champ:Description>0</champ:Description>
+        <champ:Object_ID>0</champ:Object_ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#author-NAVISTAR-yyy1v19 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#author-NAVISTAR-yyy1v19">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <champ:brand>NAVISTAR</champ:brand>
+        <champ:systemName>TeamCenter</champ:systemName>
+        <champ:userId>yyy1v19</champ:userId>
+        <champ:userName>h8206</champ:userName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#author-SCANIA-sneskal -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#author-SCANIA-sneskal">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <champ:brand>SCANIA</champ:brand>
+        <champ:systemName>XRT</champ:systemName>
+        <champ:userId>sneskal</champ:userId>
+        <champ:userName>Sunil Kaklij</champ:userName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://sdp.collaborationlayer-traton.com/champ#author-MANT&amp;B-h8206 -->
+
+    <owl:NamedIndividual rdf:about="http://sdp.collaborationlayer-traton.com/champ#author-MANT&amp;B-h8206">
+        <rdf:type rdf:resource="http://sdp.collaborationlayer-traton.com/champ#Author"/>
+        <champ:brand>MANT&amp;B</champ:brand>
+        <champ:systemName>CRT</champ:systemName>
+        <champ:userId>h8206</champ:userId>
+        <champ:userName>Gaertner, Gerrit (FIDD)</champ:userName>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

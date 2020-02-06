@@ -1,0 +1,2 @@
+ @prefix champ: <http://sdp.collaborationlayer-traton.com/champ#>.
+[r1: (champ:CRR-SCANIA-MANTB-1888075-08.71000-1205 champ:hasPart ?p1), (champ:CRR-SCANIA-MANTB-1888075-08.71000-1205 champ:hasPart ?p2) -> (champ:CRR-SCANIA-MANTB-1888075-08.71000-1205 champ:isValid "true")]

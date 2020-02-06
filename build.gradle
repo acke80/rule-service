@@ -1,0 +1,41 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.7.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+	id 'java'
+}
+
+group = 'com.scania.rs'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+	compile.exclude module: 'spring-boot-starter-logging'
+	compile.exclude group: "org.slf4j", module: "slf4j-log4j12"
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.json:json:20190722'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+	implementation 'org.apache.jena:jena-core:3.10.0'
+	implementation 'org.apache.jena:jena-arq:3.10.0'
+	implementation 'org.apache.jena:jena-tdb:3.10.0'
+	implementation 'org.apache.jena:jena-iri:3.10.0'
+	implementation 'org.codehaus.jackson:jackson-mapper-asl:1.9.13'
+	implementation 'commons-io:commons-io:2.6'
+	implementation 'com.eclipsesource.minimal-json:minimal-json:0.9.5'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+}
+
+bootJar {
+	archiveFileName = "${archiveBaseName.get()}.${archiveExtension.get()}"
+}
