@@ -105,9 +105,9 @@ public class RulesServiceEng {
 
         Reasoner reasoner = new GenericRuleReasoner(rules);
 
-        reasoner.setDerivationLogging(Boolean.TRUE);
-        reasoner.setParameter(PROPtraceOn, Boolean.TRUE);
-        reasoner.setParameter(PROPderivationLogging, Boolean.TRUE);
+        //reasoner.setDerivationLogging(Boolean.TRUE);
+        //reasoner.setParameter(PROPtraceOn, Boolean.TRUE);
+        //reasoner.setParameter(PROPderivationLogging, Boolean.TRUE);
 
         Model data = null;
         try {
@@ -121,18 +121,22 @@ public class RulesServiceEng {
         System.out.println(infmodel.validate().isValid());
         Boolean res = !(infmodel.getDeductionsModel().isEmpty());
 
-        /*
+/*
         StmtIterator i = infmodel.listStatements();
 
         while (i.hasNext()) {
             System.out.println(" - " + PrintUtil.print(i.nextStatement()));
         }
-        */
+*/
 
-        Query query = QueryFactory.create("SELECT ?o WHERE {?s <http://sdp.collaborationlayer-traton.com/champ#isValid> ?o}");
+        Query query = QueryFactory.create("CONSTRUCT {<http://miniswp.tech/demo/bank#customer-001> ?p ?o} WHERE {<http://miniswp.tech/demo/bank#customer-001> ?p ?o}");
         QueryExecution queryExec = QueryExecutionFactory.create(query, infmodel);
-        ResultSet rs = queryExec.execSelect();
+        //ResultSet rs = queryExec.execSelect();
+        Model rmod = queryExec.execConstruct();
 
+        rmod.write(System.out, "N-TRIPLES");
+
+        /*
         String qres = "";
         while (rs.hasNext()) {
             QuerySolution qs = rs.next();
@@ -141,7 +145,7 @@ public class RulesServiceEng {
 
         }
         queryExec.close();
-
+*/
         return(res.toString());
     }
 
