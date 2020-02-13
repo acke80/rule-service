@@ -23,16 +23,40 @@ import java.util.ListIterator;
 public class ElementWalkerExample {
     public static void main(String[] args) {
         final String queryString  = "" +
-                "SELECT * WHERE {\n" +
-                " ?a ?b ?c1 ;\n" +
-                "    ?b ?c2 .\n" +
-                " ?d ?e ?f .\n" +
-                " ?g ?h ?i .\n" +
-                "{ ?p ?q ?r .\n" +
-                "  ?d ?e2 ?f2 . }\n" +
-                "}";
+                "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                "PREFIX champ: <http://sdp.collaborationlayer-traton.com/champ#>\n" +
+                "                 \n" +
+                "SELECT DISTINCT ?crr\n" +
+                " WHERE {\n" +
+                "?part champ:PartId \"1888075\" .\n" +
+                "?part1 champ:PartId \"81.27120-0059\" .\n" +
+                "?crr champ:hasPart ?part .\n" +
+                "?crr champ:hasPart ?part1 .\n" +
+                "} ";
         final Query query = QueryFactory.create( queryString );
         System.out.println( "== before ==\n"+query );
+        System.out.println("Graph URIs: " + query.getDatasetDescription());
+        System.out.println("Result Vars: " + query.getResultVars());
+        System.out.println("GROUP BY: " + query.getGroupBy());
+        System.out.println("HAVING: " + query.getHavingExprs());
+        System.out.println("LIMIT: " + query.getLimit());
+        Element myelem = query.getQueryPattern();
+        if (myelem instanceof ElementGroup)
+        {
+            Element e = ((ElementGroup)myelem).getElements().get(0);
+            if(e instanceof ElementPathBlock) {
+                System.out.println("Path Block:");
+                ListIterator<TriplePath> it = ((ElementPathBlock) e).getPattern().iterator();
+                while ( it.hasNext() ) {
+                    final TriplePath tp = it.next();
+                    System.out.println(tp);
+                }
+            }
+            else if(e instanceof ElementTriplesBlock) {
+                System.out.println("Triples Block:" +  ((ElementTriplesBlock) e).getPattern().get(0).getPredicate());
+            }
+        }
+
         ElementWalker.walk( query.getQueryPattern(),
                 new ElementVisitorBase() {
                     @Override
@@ -40,7 +64,7 @@ public class ElementWalkerExample {
                         ListIterator<TriplePath> it = el.getPattern().iterator();
                         while ( it.hasNext() ) {
                             final TriplePath tp = it.next();
-                            final Var d = Var.alloc( "d" );
+                            final Var d = Var.alloc( "s1" );
                             if ( tp.getSubject().equals( d )) {
                                 it.add( new TriplePath( new Triple( d, d, d )));
                             }
